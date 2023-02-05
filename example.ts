@@ -24,3 +24,14 @@ let myUser: user = {
   email: "",
   isActive: true
 }
+
+type cardNumber = {
+  cardNumber: string
+}
+type cardExpiry = {
+  cardExpiry: string
+}
+type cardCVV = {
+  cardCVV: string
+}
+type cardDetails = cardNumber & cardExpiry & cardCVV
